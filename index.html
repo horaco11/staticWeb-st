@@ -92,17 +92,25 @@
     </div>
   </section>
 
-  <!-- Agendar Cita -->
-   <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FArgentina%2FBuenos_Aires&showPrint=0&title=Agenda%20tu%20cita" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  <!-- Sección Agendar Cita -->
   <section id="cita">
     <div class="container">
       <h2 class="text-center mb-5">Agendá tu cita 🗓️</h2>
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-10">
+          <!-- IFRAME DE GOOGLE CALENDAR -->
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=hnansaldi%40gmail.com&ctz=America%2FArgentina%2FBuenos_Aires"
+            style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>
+
+      <h4 class="text-center mt-5">Completá tus datos y contanos el problema</h4>
       <div class="row justify-content-center">
         <div class="col-md-6">
-          <!-- Formulario para Agendar (index.html) -->
+          <!-- FORMULARIO FORMSPREE -->
           <form action="https://formspree.io/f/mdkplork" method="POST"
             class="p-4 border rounded shadow-sm bg-white">
-            <input type="hidden" name="_subject" value="Nueva solicitud de cita - Servicio Técnico" />
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -112,20 +120,10 @@
               <input type="email" class="form-control" id="email" name="_replyto" required>
             </div>
             <div class="mb-3">
-              <label for="fecha" class="form-label">Fecha preferida</label>
-              <input type="date" class="form-control" id="fecha" name="fecha">
-            </div>
-            <div class="mb-3">
-              <label for="hora" class="form-label">Hora preferida</label>
-              <input type="time" class="form-control" id="hora" name="hora">
-            </div>
-            <div class="mb-3">
               <label for="mensaje" class="form-label">Detalle del problema</label>
               <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
             </div>
-            <!-- Campo oculto anti-spam (opcional) -->
-            <input type="text" name="_gotcha" style="display:none">
-            <button type="submit" class="btn btn-custom w-100">Enviar solicitud</button>
+            <button type="submit" class="btn btn-custom w-100">Enviar información</button>
           </form>
         </div>
       </div>
