@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicio Técnico de PC - Córdoba</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { scroll-behavior: smooth; }
+    header {
+      background: linear-gradient(135deg, #0d6efd, #00bcd4);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    section { padding: 60px 0; }
+    footer {
+      background: #212529;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .btn-custom {
+      background-color: #0d6efd;
+      color: white;
+      border-radius: 25px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">💻 Servicio Técnico</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cita">Agendar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="inicio">
+    <div class="container">
+      <h1 class="fw-bold">Servicio Técnico de PC y Notebooks 🧰</h1>
+      <p class="lead">Reparación rápida, confiable y cerca tuyo en Córdoba Capital</p>
+      <a href="#cita" class="btn btn-lg btn-light mt-3">📅 Agendá tu cita</a>
+    </div>
+  </header>
+
+  <!-- Servicios -->
+  <section id="servicios" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Nuestros Servicios</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3">
+            <h4>🖥️ Reparación de PC</h4>
+            <p>Diagnóstico y reparación de hardware y software, limpieza interna y optimización del sistema.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3">
+            <h4>💾 Recuperación de Datos</h4>
+            <p>Recuperamos información de discos duros dañados, SSD o pendrives con máxima confidencialidad.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3">
+            <h4>⚙️ Mantenimiento Preventivo</h4>
+            <p>Evita fallas futuras con limpieza, control térmico y actualización de componentes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agendar Cita -->
+  <section id="cita">
+    <div class="container">
+      <h2 class="text-center mb-5">Agendá tu cita 🗓️</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form action="https://formspree.io/f/tu_form_id" method="POST" class="p-4 border rounded shadow-sm bg-white">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" name="_replyto" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Detalle del problema</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Enviar solicitud</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <footer id="contacto">
+    <div class="container">
+      <p>📍 Córdoba Capital | 📞 WhatsApp: +54 351 0000000 | ✉️ soporte@serviciotecnico.com</p>
+      <p class="small mb-0">© 2025 Servicio Técnico de PC. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
